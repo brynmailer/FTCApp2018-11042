@@ -17,9 +17,12 @@ public class Competition_OpModeAutonomous extends LinearOpMode {
 
         waitForStart();
 
-        liftUp(1, 300);
+        liftUp(1, 700);
         driveForward(0.5, 500);
         liftDown(0.5, 700);
+        driveRight(0.5, 500);
+        driveBackward(0.5, 1);
+        driveRight(1, 2);
     }
 
     public void driveForward(double power, int time) throws InterruptedException {
